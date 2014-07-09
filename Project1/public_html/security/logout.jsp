@@ -10,5 +10,6 @@
   <body>
     <% session.invalidate(); %>
     <p>You have been successfully logout</p>
+    <p><a href="../welcome.jspx"> back to welcome page </a></p>
   </body>
 </html>

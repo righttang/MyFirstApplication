@@ -11,7 +11,7 @@
       <body>
         <h:form>
           <h:inputText value="#{Dog.name}"/>
-          <h:commandButton value="Click Me" actionListener="#{Dog.Clicked}"/>
+          <h:commandButton value="Click Me" actionListener="#{Dog.DogClicked}"/>
 
         </h:form>
       </body>

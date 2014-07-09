@@ -9,11 +9,29 @@
         <title>page1</title>
       </head>
       <body>
-        <h:form>
-          <h:inputText value="#{Dog.name}"/>
-          <h:commandButton value="Click Me" actionListener="#{Dog.Clicked}"/>
-
-        </h:form>
+        <form method="POST" action="j_security_check">
+          <table border="1">
+            <tr>
+              <td>Username:</td>
+              <td>
+                <input type="text" name="j_username"></input>
+              </td>
+            </tr>
+             
+            <tr>
+              <td>Password:</td>
+              <td>
+                <input type="password" name="j_password"></input>
+              </td>
+            </tr>
+             
+            <tr>
+              <td colspan="2" align="right">
+                <input type="submit" value="Submit"></input>
+              </td>
+            </tr>
+          </table>
+        </form>
       </body>
     </html>
   </f:view>

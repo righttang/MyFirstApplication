@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='windows-1252'?>
+<jsp:root xmlns:jsp="http://java.sun.com/JSP/Page" version="1.2" xmlns:f="http://java.sun.com/jsf/core" xmlns:h="http://java.sun.com/jsf/html">
+  <jsp:output omit-xml-declaration="true" doctype-root-element="HTML" doctype-system="http://www.w3.org/TR/html4/loose.dtd" doctype-public="-//W3C//DTD HTML 4.01 Transitional//EN"/>
+  <jsp:directive.page contentType="text/html;charset=windows-1252"/>
+  <f:view>
+    <html>
+      <head>
+        <title>Security login example</title>
+      </head>
+      <body>
+        <h:outputText value="Welcome! Your user information is below "/><br/>
+         
+        <h:outputLabel value="Remote User: #{facesContext.externalContext.remoteUser}"/><br/>
+         
+        <h:outputLabel value="user Principal Name: #{facesContext.externalContext.userPrincipal.name}"/><br/>
+         
+        <h:outputText value="Application Context: #{facesContext.externalContext.requestContextPath}"/><br/>
+        <h:outputText value="Application Context: #{Dog.userRoleList}"/><br/>
+        <p/>
+        <h:outputLink value="admin/static.jspx">
+          <h:outputText value="Admin Access"/>
+        </h:outputLink>
+         
+        <br/>
+         
+        <h:outputText value="Click here to"/>
+         
+        <h:outputLink value="security/logout.jsp">
+          <h:outputText value="Log Out"/>
+        </h:outputLink>
+      </body>
+    </html>
+  </f:view>
+</jsp:root>
+

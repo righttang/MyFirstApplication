@@ -2,6 +2,6 @@
 <weblogic-web-app>
       <security-role-assignment>
          <role-name>admin</role-name>
-         <principal-name>supportGroup</principal-name>
+         <principal-name>Administrators</principal-name>
      </security-role-assignment>
  </weblogic-web-app>
